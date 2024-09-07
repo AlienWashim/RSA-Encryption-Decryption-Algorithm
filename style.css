@@ -1,0 +1,101 @@
+body {
+    background-color: aquamarine;
+    background-image: url("background.jpg");
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+.title {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
+    color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5), /* Red shadow */
+                0 0 15px rgba(0, 255, 0, 0.5), /* Green shadow */
+                0 0 15px rgba(0, 0, 255, 0.5); /* Blue shadow */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));}
+    25% {background: linear-gradient(135deg, rgba(255, 200, 0, 0.2), rgba(255, 255, 200, 0.5));}
+    50% {background: linear-gradient(135deg, rgba(200, 255, 0, 0.2), rgba(200, 255, 200, 0.5));}
+    75% {background: linear-gradient(135deg, rgba(0, 255, 200, 0.2), rgba(200, 255, 255, 0.5));}
+    100% {background: linear-gradient(135deg, rgba(0, 0, 255, 0.2), rgba(200, 200, 255, 0.5));}
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sender_side, .receiver_side {
+    width: 48%; /* Adjusted width to fit content */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.sender_side {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgb(54, 225, 255);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.receiver_side {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 75, 75);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.butt {
+    font-size: 20px;
+    background-color: rgb(4, 255, 154);
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.butt:hover {
+    background-color: rgb(255, 6, 6);
+    color: white;
+}
+
+.pass_area textarea, .cipher_text textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+#p_area {
+    background-color: rgba(0, 255, 128, 0.6);
+    color: tomato;
+    font-size: 18px;
+}
+
+.carea {
+    background-color: rgba(191, 240, 244, 0.9);
+}

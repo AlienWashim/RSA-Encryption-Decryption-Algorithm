@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption-Decryption Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="title">
+            <h1>R.S.A Cryptosystem by Washim and Tanbin</h1>
+        </div>
+        <div class="box">
+            <div class="sender_side">
+                Sender Side
+                <div class="pass_area">
+                    <h3>Value of e: </h3>
+                    <textarea name="pass_area" id="earea" cols="30" rows="1"></textarea>
+                </div>
+                <div class="cipher_text">
+                    <h1>Plaintext</h1>
+                    <textarea name="Cipherment1" id="ptext" cols="60" rows="3"></textarea>
+                </div>
+                <input type="button" class="butt" id="encryptBtn" value="Encrypt" onclick="encrypt()">
+                Click this button to encrypt the plaintext
+                <p id="enc"></p>
+                <div class="cipher_text">
+                    <h1>Ciphertext</h1>
+                    <textarea name="Ciphermen2" id="ctext" cols="60" rows="8"></textarea>
+                </div>
+            </div>
+
+            <div class="receiver_side">
+                Receiver Side
+                <div class="cipher_text">
+                    <h1>Ciphertext</h1>
+                    <textarea name="Cipherment3" id="carea" cols="60" rows="8"></textarea>
+                </div>
+                <input type="button" class="butt" id="decryptBtn" value="Decrypt" onclick="decrypt()">
+                Click this button to decrypt the plaintext
+                <p id="dec"></p>
+                <div class="cipher_text">
+                    <h1>Plaintext</h1>
+                    <textarea name="Cipherment4" id="parea" cols="60" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
